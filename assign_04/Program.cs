@@ -14,7 +14,8 @@ namespace Assignment_04_C_sharp_Code
         {
             try
             {
-                string connection = @"Data Source=INLPF3KTP43\MSSQLSERVER1;Initial Catalog=mukesh;trusted_connection=true";
+                string ConnectionStr = "Data Source=INLPF2KZ387\\MSSQLSERVER1;initial catalog=Ivy;trusted_connection=true";
+            SqlConnection sqlconn = new SqlConnection(ConnectionStr);
 
                 SqlConnection conn = new SqlConnection(connection);
                 conn.Open();
